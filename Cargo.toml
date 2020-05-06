@@ -1,0 +1,17 @@
+[package]
+name = "flex_rs"
+version = "0.1.0"
+authors = ["Keigo Oka <ogiekako@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "flex_rs"
+path = "src/main.rs"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.4"
+syn = { version = "1.0.18", features = ["full", "extra-traits"] }
+proc-macro2 = "1.0.12"
